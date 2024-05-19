@@ -22,5 +22,9 @@ public class BreakSingleton2 {
         Samosa samosa3= (Samosa) samosa1.clone();
         System.out.println(samosa3.hashCode());
 
+        osw.close();
+        ois.close();
+
+
     }
 }
