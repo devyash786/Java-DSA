@@ -12,7 +12,7 @@ public class Pattern {
         .setEmail("email121323")
         .setUserName("sew1231").build();
 
-        System.out.println(user2.toString());
+        System.out.println(user2);
 
     }
     
