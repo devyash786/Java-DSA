@@ -1,4 +1,4 @@
-package DesignPattern;
+package DesignPattern.SingletonPattern;
 public class Jalebi {
     //eager way of singleton class
     private static Jalebi jalebi=new Jalebi();
