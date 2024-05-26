@@ -2,16 +2,11 @@ package Day3;
 
 public class KadaneAlgorithm {
     static void subArraySum(int arr[]){
-        int currentSum=0,maxSum=Integer.MIN_VALUE;
-        for(int i: arr){
-            currentSum+=i;
-            if(currentSum<0){
-                currentSum=0;
-            }
-            if (maxSum<currentSum) {
-                maxSum=currentSum;
-                
-            }
+        int currentSum=arr[0],maxSum=arr[0];
+        for(int i=1;i<arr.length;i++){
+            currentSum=Math.max(currentSum+arr[i], arr[i]);
+            maxSum=Math.max(currentSum,maxSum);
+            
         }
         System.out.println("max is "+maxSum);
     }
